@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import {Routes, Route, Navigate } from "react-router-dom";
+import {useState,useEffect} from "react"
+import Navbar from "./shared/Navbar";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default function App() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    fetch('https://gitconnected.com/v1/portfolio/lancey1')
+      .then(res => res.json())
+      .then(user => {
+        console.log('success')
+        setUser(user);
+      });
+  }, []);
+  if (!user) {
+    return <div />;
+  }
 
-export default App;
+  return (
+    <main>
+     <Navbar />
+     <Routes>
+        <Route exact path="/about" element={<About user={user}/>} />
+        {/* <Route exact path="/" element={<About user={user}/>} /> */}
+        <Route exact path="/" element={<Home user={user}/>} />
+        <Route exact path="/projects" element={<Projects user={user} />} />
+        <Route path="*" element={<Navigate to="/about"/>} />
+      </Routes>
+    </main>
+  );
