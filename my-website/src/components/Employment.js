@@ -1,4 +1,4 @@
-import styles from "./Employment.module.css";
+import styles from "./Employment.css";
 
 function Employment(props) {
   const experienceList = props.experience.map((experience) => (

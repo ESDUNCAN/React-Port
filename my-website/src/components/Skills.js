@@ -1,4 +1,4 @@
-import styles from "./Skills.module.css";
+import styles from "./Skills.css";
 
 function Skills(props) {
   const skillsList = props.skills.map((skill) => <p>{skill.name}</p>);

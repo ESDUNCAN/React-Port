@@ -9,7 +9,7 @@ import "./App.css";
 export default function App() {
   const [user, setUser] = useState(null);
   useEffect(() => {
-    fetch("https://gitconnected.com/v1/portfolio/lancey1")
+    fetch("https://gitconnected.com/v1/portfolio/ESDUNCAN")
       .then((res) => res.json())
       .then((user) => {
         console.log("success");

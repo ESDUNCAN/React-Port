@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import styles from "./Project-Carousel.module.css";
+import styles from "./ProjectCarousel.css";
 import { useMediaQuery } from "react-responsive";
 
 export default function ControlledCarousel(props) {

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import ControlledCarousel from "../components/Project-Carousel";
+import ControlledCarousel from "../components/ProjectCarousel";
 
 function Projects(props) {
   return (
