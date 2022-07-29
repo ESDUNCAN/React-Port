@@ -33,7 +33,7 @@ function Home(props) {
         <a href="https://github.com/ESDUNCAN/"> Github |</a>
         <a href="https://www.linkedin.com/in/eric-duncan-103554243/">
           {" "}
-          LinkdIn{" "}
+          LinkedIn{" "}
         </a>
       </div>
     </div>

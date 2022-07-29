@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-import ProfileCard from "../components/ProfileCard";
 import styles from "./Home.module.css";
 import { Pill } from "../styles";
 
