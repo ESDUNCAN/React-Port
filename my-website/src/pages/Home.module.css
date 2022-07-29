@@ -1,3 +1,4 @@
+
 .container {
   margin-top: 1.5rem;
   margin-left: 10%;
@@ -11,14 +12,14 @@
 }
 
 .img {
-  margin-top: 2.7rem;
-  height: auto;
+  object-fit: cover;
+  width: 370px;
+  height: 370px;
 }
 
 .basics {
   max-width: 600px;
   width: 50%;
-  margin-top: 8rem;
   margin-bottom: 2rem;
   margin-left: 1.5rem;
 }
@@ -55,3 +56,4 @@
     margin-bottom: 0.25rem;
   }
 }
+

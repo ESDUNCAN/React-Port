@@ -1,7 +1,9 @@
-import React from "react";
+import { Fragment } from "react";
+import ProfileCard from "../components/ProfileCard";
 import styles from "./Home.module.css";
+import { Pill } from "../styles";
 
-function Home(props) {
+function Skills(props) {
   const { user } = props;
 
   return (
@@ -28,16 +30,14 @@ function Home(props) {
           {user.basics.label} from {user.basics.region}
         </p>
         {/* <p>{user.basics.yearsOfExperience} year of experience as a developer</p> */}
-        <p>{user.basics.headline}</p>
-        <p>{user.basics.summary}</p>
-        <a href="https://github.com/ESDUNCAN/"> Github |</a>
-        <a href="https://www.linkedin.com/in/eric-duncan-103554243/">
-          {" "}
-          LinkdIn{" "}
-        </a>
+        <div>
+          {user.skills.map((skill) => (
+            <Pill key={skill.name}>{skill.name}</Pill>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default Skills;
