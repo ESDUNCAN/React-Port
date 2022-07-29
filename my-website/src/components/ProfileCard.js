@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./ProfileCard.css";
+import styles from "./ProfileCard.module.css";
 import Education from "./Education";
 import Employment from "./Employment";
 import Skills from "./Skills";

@@ -1,4 +1,4 @@
-import styles from "./Education.css";
+import styles from "./Education.module.css";
 
 function Education(props) {
   const educationList = props.education.map((school) => (

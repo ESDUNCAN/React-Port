@@ -1,13 +1,13 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import styles from "./Navbar.css";
+import styles from "./Navbar.module.css";
 import logo from "../images/logo2.png";
 
 function Navbar() {
   let navigate = useNavigate();
   const resume =
     "https://resume.creddle.io/resume/cfbzubtuc3r?fbclid=IwAR3mn-8000nlPetFSaIK0rWo4NC0IF4aKZYjlga6cOpTVRNADLwqQlU_AqY";
-  const github = "https://github.com/lancey1";
-  const linkedin = "https://www.linkedin.com/in/lanceyu1010";
+  const github = "https://github.com/ESDUNCAN";
+  const linkedin = "https://www.linkedin.com/in/eric-duncan-103554243/";
 
   return (
     <div className={`${styles.navbar}`}>
@@ -40,7 +40,7 @@ function Navbar() {
           </li>
           <li className={`${styles.github}`}>
             <a
-              title="Lance's GitHub"
+              title="Eric's GitHub"
               href={github}
               target="_blank"
               rel="noreferrer"
@@ -51,7 +51,7 @@ function Navbar() {
           </li>
           <li className={`${styles.linkedin}`}>
             <a
-              title="Lance's Linkedin"
+              title="Eric's Linkedin"
               href={linkedin}
               target="_blank"
               rel="noreferrer"
