@@ -1,11 +1,28 @@
-import { Fragment } from "react";
-import ControlledCarousel from "../components/ProjectCarousel";
+import styles from "./Home.module.css";
+import { Pill, ProjectItem, SkillContainer, ProjectTitle } from "../styles";
 
 function Projects(props) {
+  const { user } = props;
+
   return (
-    <Fragment>
-      <ControlledCarousel projects={props.user.projects} />
-    </Fragment>
+    <div className={`${styles.container}`}>
+      <ul>
+        {user.projects.map((project, i) => (
+          <ProjectItem key={i}>
+            <ProjectTitle>{project.displayName}</ProjectTitle>
+            <p>{project.summary}</p>
+            <a href={`${project.website}`} target="_blank">
+              GitHub<i class="fa fa-github"></i>
+            </a>
+            <SkillContainer>
+              {[...project.languages, ...project.libraries].map((item, j) => (
+                <Pill key={j}>{item}</Pill>
+              ))}
+            </SkillContainer>
+          </ProjectItem>
+        ))}
+      </ul>
+    </div>
   );
 }
 
