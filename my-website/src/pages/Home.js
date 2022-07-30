@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
+import { Pill } from "../styles";
 
 function Home(props) {
   const { user } = props;
@@ -35,6 +36,12 @@ function Home(props) {
           {" "}
           LinkedIn{" "}
         </a>
+        <h2>Skills </h2>
+        <div>
+          {user.skills.map((skill) => (
+            <Pill key={skill.name}>{skill.name}</Pill>
+          ))}
+        </div>
       </div>
     </div>
   );

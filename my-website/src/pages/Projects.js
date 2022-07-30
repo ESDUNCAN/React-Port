@@ -1,6 +1,6 @@
 import styles from "./Home.module.css";
-import { Pill, ProjectItem, SkillContainer, ProjectTitle } from "../styles";
-
+import { Pill } from "../styles";
+import { ProjectItem, SkillContainer, ProjectTitle } from "../projectStyles";
 function Projects(props) {
   const { user } = props;
 
