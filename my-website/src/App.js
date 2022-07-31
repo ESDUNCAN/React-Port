@@ -4,6 +4,7 @@ import Navbar from "./shared/Navbar";
 import Skills from "./pages/Skills";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Education from "./pages/Education";
 import "./App.css";
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         <Route exact path="/" element={<Home user={user} />} />
         <Route exact path="/projects" element={<Projects user={user} />} />
         <Route path="*" element={<Navigate to="/skills" />} />
+        <Route exact path="/education" element={<Education user={user} />} />
       </Routes>
     </main>
   );

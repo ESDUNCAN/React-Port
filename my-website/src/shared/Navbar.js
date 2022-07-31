@@ -26,6 +26,9 @@ function Navbar() {
             <NavLink to="skills">Skills</NavLink>
           </li>
           <li>
+            <NavLink to="education">Education</NavLink>
+          </li>
+          <li>
             <a
               title="Eric's Résumé"
               href={resume}
