@@ -11,3 +11,12 @@ export const Pill = styled.span`
   border-radius: 2px;
   font-weight: bold;
 `;
+
+export const SectionTitle = styled.h3`
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+`;
+
+export const Paragraph = styled.p`
+  white-space: pre-wrap;
+`;

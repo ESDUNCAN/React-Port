@@ -23,7 +23,7 @@ function Navbar() {
             <NavLink to="projects">Projects</NavLink>
           </li>
           <li>
-            <NavLink to="skills">Skills</NavLink>
+            <NavLink to="experience">Experience</NavLink>
           </li>
           <li>
             <NavLink to="education">Education</NavLink>
