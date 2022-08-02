@@ -2,10 +2,10 @@ import React, { Component, Fragment } from "react";
 import { Pill } from "../styles";
 
 import Card from "./Card.js";
-import Bopz from "../images/Bopz.png";
-import Scheduler from "../images/Scheduler.png";
-import Jungle from "../images/Jungle.png";
-import Tweeter from "../images/Tweeter.png";
+import leah3 from "../images/leah3.png";
+import leah from "../images/leah.png";
+import leah1 from "../images/leah1.png";
+import leah2 from "../images/leah2.png";
 import rightArrow from "../images/rightArrow.png";
 import leftArrow from "../images/leftArrow.png";
 
@@ -15,10 +15,10 @@ class Deck extends Component {
 
     this.state = {
       cards: [
-        <Card picsum={Scheduler} id="one" key="one" />,
-        <Card picsum={Jungle} id="two" key="two" />,
-        <Card picsum={Tweeter} id="three" key="three" />,
-        <Card picsum={Bopz} id="four" key="four" />,
+        <Card picsum={leah} id="one" key="one" />,
+        <Card picsum={leah1} id="two" key="two" />,
+        <Card picsum={leah2} id="three" key="three" />,
+        <Card picsum={leah3} id="four" key="four" />,
       ],
     };
   }
@@ -365,13 +365,6 @@ class Deck extends Component {
           >
             {this.state.cards}
           </div>
-        </div>
-
-        <h2>Skills </h2>
-        <div>
-          {this.props.user.skills.map((skill) => (
-            <Pill key={skill.name}>{skill.name}</Pill>
-          ))}
         </div>
 
         <div

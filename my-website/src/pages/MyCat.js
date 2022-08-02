@@ -1,6 +1,6 @@
 import Deck from "../components/Deck";
 
-function Projects(props) {
+function myCat(props) {
   const { user } = props;
   return (
     <div>
@@ -9,4 +9,4 @@ function Projects(props) {
   );
 }
 
-export default Projects;
+export default myCat;

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./shared/Navbar";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import MyCat from "./pages/MyCat";
 import Education from "./pages/Education";
 import "./App.css";
 
@@ -27,7 +27,7 @@ export default function App() {
       <Routes>
         <Route exact path="/experience" element={<Experience user={user} />} />
         <Route exact path="/" element={<Home user={user} />} />
-        <Route exact path="/projects" element={<Projects user={user} />} />
+        <Route exact path="/mycat" element={<MyCat user={user} />} />
         <Route path="*" element={<Navigate to="/experience" />} />
         <Route exact path="/education" element={<Education user={user} />} />
       </Routes>

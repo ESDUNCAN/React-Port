@@ -20,7 +20,7 @@ function Navbar() {
         </div>
         <ul className={`${styles.links}`}>
           <li>
-            <NavLink to="projects">Projects</NavLink>
+            <NavLink to="mycat">My Cat</NavLink>
           </li>
           <li>
             <NavLink to="experience">Experience</NavLink>
