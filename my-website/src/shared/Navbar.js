@@ -26,7 +26,7 @@ function Navbar() {
             <NavLink to="experience">Experience</NavLink>
           </li>
           <li>
-            <NavLink to="education">Education</NavLink>
+            <NavLink to="work">Work</NavLink>
           </li>
           <li>
             <a

@@ -4,7 +4,7 @@ import Navbar from "./shared/Navbar";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
 import MyCat from "./pages/MyCat";
-import Education from "./pages/Education";
+import Work from "./pages/Work";
 import "./App.css";
 
 export default function App() {
@@ -29,7 +29,7 @@ export default function App() {
         <Route exact path="/" element={<Home user={user} />} />
         <Route exact path="/mycat" element={<MyCat user={user} />} />
         <Route path="*" element={<Navigate to="/experience" />} />
-        <Route exact path="/education" element={<Education user={user} />} />
+        <Route exact path="/work" element={<Work user={user} />} />
       </Routes>
     </main>
   );
