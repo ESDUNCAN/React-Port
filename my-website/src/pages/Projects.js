@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+import styles from "./Projects.module.css";
 import { Pill } from "../styles";
 import { ProjectItem, SkillContainer, ProjectTitle } from "../projectStyles";
 function Projects(props) {
