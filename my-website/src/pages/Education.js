@@ -1,6 +1,6 @@
 import { EducationItem, Institution, Degree } from "../educationStyles";
 import { Pill, Paragraph, SectionTitle } from "../styles";
-import styles from "./Home.module.css";
+import styles from "./Education.module.css";
 
 function Education(props) {
   const { user } = props;

@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Pill } from "../styles";
 
 import Card from "./Card.js";
 import Bopz from "../images/Bopz.png";
@@ -353,6 +354,7 @@ class Deck extends Component {
             id="next"
           />
         </div>
+
         <div
           ref={(ref_id) => (this.view_port = ref_id)}
           style={styles.view_port}
@@ -363,6 +365,13 @@ class Deck extends Component {
           >
             {this.state.cards}
           </div>
+        </div>
+
+        <h2>Skills </h2>
+        <div>
+          {this.props.user.skills.map((skill) => (
+            <Pill key={skill.name}>{skill.name}</Pill>
+          ))}
         </div>
 
         <div
