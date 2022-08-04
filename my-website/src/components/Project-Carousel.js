@@ -48,9 +48,10 @@ export default function ControlledCarousel(props) {
             target="_blank"
             rel="noreferrer"
           >
-            <b>{project.displayName}</b>
+            <b>{project.displayName} - Github repo</b>
           </a>
           <p>{project.summary}</p>
+
           <div>
             <b>Tech Stack</b>
           </div>
