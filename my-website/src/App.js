@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./shared/Navbar";
-import Experience from "./pages/Experience";
+// import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import MyCat from "./pages/MyCat";
 import Work from "./pages/Work";
@@ -25,10 +25,10 @@ export default function App() {
     <main>
       <Navbar />
       <Routes>
-        <Route exact path="/experience" element={<Experience user={user} />} />
+        {/* <Route exact path="/projects" element={<Projects user={user} />} /> */}
         <Route exact path="/" element={<Home user={user} />} />
         <Route exact path="/mycat" element={<MyCat user={user} />} />
-        <Route path="*" element={<Navigate to="/experience" />} />
+        <Route path="*" element={<Navigate to="/" />} />
         <Route exact path="/work" element={<Work user={user} />} />
       </Routes>
     </main>

@@ -23,7 +23,7 @@ function Navbar() {
             <NavLink to="mycat">Leia</NavLink>
           </li>
           <li>
-            <NavLink to="experience">Experience</NavLink>
+            <NavLink to="projects">Projects</NavLink>
           </li>
           <li>
             <NavLink to="work">Work</NavLink>
