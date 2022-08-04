@@ -1,5 +1,5 @@
 import React from "react";
-import { Pill } from "../styles";
+import { Pill } from "../styles/skillStyles";
 
 function Card(props) {
   return (

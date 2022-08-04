@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Pill } from "../styles";
+import { Pill } from "../styles/skillStyles";
 
 import Card from "./Card.js";
 import leah3 from "../images/leah3.png";

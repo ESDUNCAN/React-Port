@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Pill } from "../styles";
+import { Pill } from "../styles/skillStyles";
 
 function Home(props) {
   const { user } = props;

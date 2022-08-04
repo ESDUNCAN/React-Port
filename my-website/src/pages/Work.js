@@ -1,5 +1,5 @@
-import { EducationItem, Institution, Degree } from "../educationStyles";
-import { Pill, Paragraph, SectionTitle } from "../styles";
+import { EducationItem, Institution, Degree } from "../styles/educationStyles";
+import { Pill, Paragraph, SectionTitle } from "../styles/skillStyles";
 import styles from "./Work.module.css";
 
 function Work(props) {
