@@ -9,15 +9,13 @@ export default function ControlledCarousel(props) {
 
   const isDesktop = useMediaQuery({ query: "(min-width: 1070px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1069px)" });
-  console.log({ isTablet });
-  console.log({ isDesktop });
+  // console.log({ isTablet });
+  // console.log({ isDesktop });
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
   const projectList = props.projects.map((project) => {
-    console.log("PROJECTT IS HERE", project);
-
     let image;
     if (project.images.length > 0) {
       image = project.images[1].resolutions.desktop.url;
@@ -69,7 +67,7 @@ export default function ControlledCarousel(props) {
   return (
     <div className={`${styles.container}`}>
       <Carousel
-        variant="dark"
+        // variant="dark"
         activeIndex={index}
         onSelect={handleSelect}
         interval={null}
