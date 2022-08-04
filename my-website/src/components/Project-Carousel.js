@@ -67,7 +67,7 @@ export default function ControlledCarousel(props) {
   return (
     <div className={`${styles.container}`}>
       <Carousel
-        // variant="dark"
+        variant="dark"
         activeIndex={index}
         onSelect={handleSelect}
         interval={null}

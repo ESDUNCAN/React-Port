@@ -50,3 +50,15 @@
 .carousel-item {
   text-align: center;
 }
+
+.carousel-indicators div{
+  visibility: hidden;
+}
+
+.carousel-control-prev {
+  visibility: hidden;
+}
+
+.carousel-control-next {
+  visibility: hidden;
+}
